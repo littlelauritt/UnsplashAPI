@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 62.5%;
+    font-weight: 300;
+    /* background-color:rgb(39, 39, 39);
+    color: cornsilk; */
+}
+header{
+    border-bottom: 0.5rem solid rgb(224, 92, 143);
+}
+.container{
+    width: 1320px;
+    margin: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+h2{
+    font-size: 3rem;
+}
+h2 i{
+    color:rgb(224, 92, 143);
+}
+.cuadro-busqueda{
+    position: relative;
+    width: 35rem;
+}
+.input{
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+    border-radius: 2.5rem;
+    outline: none;
+    border: 0.2rem solid rgb(104, 102, 102);
+    transition: all 0.5s ease-in-out;
+}
+.input:focus{
+    box-shadow: 0 0 0.5rem rgb(224, 92, 143);
+    border: 0.2rem solid rgb(224, 92, 143);
+
+}
+.cuadro-busqueda i{
+    color: rgb(104, 102, 102);
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 1s ease-in-out;
+}
+.cuadro-busqueda i:hover{
+    color: rgb(224, 92, 143);
+}
+.imagenes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+h3{
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.hidden {
+    display: none;
+}
+.img{
+    width: 38rem;
+    height: 20rem;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+/* BREAKPOINT*/
+@media screen and (max-width: 1320px){
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    nav {
+        justify-content: center;
+    }
+    h2{
+        margin-bottom: 1.6rem;
+    }  
+}
+@media screen and (max-width: 700px){
+    body {
+        font-size: 50%;
+    }
+    .cuadro-busqueda{
+        width: 80%;
+    }  
+}
+@media screen and (max-width: 480px){
+    body {
+        font-size: 40%;
+    }
+    h2{
+        font-size: 2rem;
+    }  
+}
+
+
